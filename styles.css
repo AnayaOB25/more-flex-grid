@@ -1,5 +1,5 @@
 /*
-    Name: 
+    Name: Anaya OBannon
 */
 
 :root{
@@ -72,6 +72,9 @@ header{
     background-clip: border-box;
     background-position: right;
     background-size: contain;
+    display: flexbox;
+    align-items: center;
+    justify-content: space-between;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
 }
@@ -135,6 +138,10 @@ nav{
 nav ul{
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
 }
@@ -162,6 +169,9 @@ nav a svg{
 
 nav a span{
     display: block;
+    position: relative;
+    top: -20px;
+    z-index: 1;
     position: relative;
     /* Styles were added here to arrange the content, I used top and z-index for this */
     /* TO DO */
@@ -222,6 +232,10 @@ p{
 #plants{
     background-color: var(--wht);
     padding: 96px 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    justify-items: center;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
 }
@@ -229,12 +243,18 @@ p{
 #plants h3, #plants > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    text-align: center;
+    grid-column: 1 / -1;
 }
 
 #plants section{
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
     margin: 32px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 #plants h4{
@@ -247,6 +267,7 @@ p{
     width: 100%;
     max-width: 400px;
     height: auto;
+    order: -1;
 }
 
 .price{
@@ -263,6 +284,10 @@ p{
 #contact{
     color: var(--wht);
     padding: 64px 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
 }
@@ -271,6 +296,8 @@ p{
 #contact h3, #contact > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    text-align: center;
+    grid-column: 1 / -1;
 }
 
 /* Contact text color */
@@ -361,12 +388,18 @@ th:nth-of-type(even), td:nth-of-type(even){
     margin: 16px auto;
     list-style-type: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 16px;
+    justify-items: center;
 }
 
 /* Heading for Social Media Section */
 #social h4{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    text-align: center;
+    grid-column: 1 / -1;
 }
 
 #social a{
